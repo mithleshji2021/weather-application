@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-[#2d2e71]">
+    
+
+    <main class="w-full h-screen flex flex-col  items-center gap-6 mb-8 ">
+
+        <div class="flex  items-center justify-center mt-20 w-full ">
+            <p class="text-3xl uppercase ml-4 font-bold text-white shadow-md">Know Your City Temperature</p>
+        </div>
+
+        <div
+            class="box  bg-gradient-to-br from-orange-400 via-yellow-300 to-yellow-300   p-8  flex  flex-col justify-center items-center rounded-lg gap-6 mx-4 md:mx-0">
+            <div id="search-box" class="flex justify-between w-full px-6 bg-white items-center py-3 rounded-full">
+                <input id="input" class="focus:outline-none" type="text" autofocus placeholder="Enter Your City...">
+                <i id="searchicon" class="fa-solid fa-magnifying-glass text-lg text-gray-500"></i>
+            </div>
+            <div id="error-city" class="w-full  ">
+                <p class="pl-6 italic text-red-600 -mt-6 font-semibold">Enter valid city name</p>
+            </div>
+            <div id="temprature-detail" class="flex flex-col gap-8 ">
+                <div class="flex flex-col ">
+                    <div class="flex justify-center items-center ">
+                        <img id="wheather-type" src="wheather-image.webp" class="h-32" alt="">
+                    </div>
+                    <div class="flex justify-center items-center mt-2 text-5xl font-bold text-blue-600 ">
+                        <p id="temperature">28°C </p>
+                    </div>
+                    <div
+                        class="flex justify-center items-center flex-row gap-5 text-2xl font-semibold text-[#6a0259] mt-2">
+                        <p id="city">
+                            Gurgaon
+                        </p>
+
+                    </div>
+
+                </div>
+                <div class="flex flex-row justify-between gap-8">
+                    <div class="flex flex-row justify-center items-center">
+                        <img src="humidity-removebg-preview.png" class="sm:h-12 h-8" alt="">
+                        <div class="font-semibold text-[#3d0e0e] sm:text-lg text-[14px]">
+                            <p id="humidity">28%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-2 justify-center items-center">
+                        <img src="wind_speed-removebg-preview.png" class="sm:h-8 h-6" alt="">
+                        <div class="font-semibold text-[#3d0e0e] sm:text-lg text-[14px]">
+                            <p id="windspeed">18.2</p>
+                            <p class="whitespace-nowrap">Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
