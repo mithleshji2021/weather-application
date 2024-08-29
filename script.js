@@ -24,7 +24,7 @@ input.addEventListener("keyup", async (event) => {
             
             if(data.cod == "404"){
                 errorCity.classList.remove('hidden'); 
-
+                temperatureDetail.classList.add('hidden');
             }else{
 
                 console.log(data);
